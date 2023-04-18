@@ -111,4 +111,14 @@ features = np.array([[4, 9000.60, 9000.60, 0.0]])
 print(model.predict(features))
 
 ```
+Dump Model with the help of pickle 
+```
+import pickle
+pickle.dump(mode|l, open("model.pkl", "wb"))
+
+```
+loading the model 
+```                            
+model = pickle.load(open("model.pkl", "rb"))
+```
 Refrence : The code in this project was inspired by the [article](https://thecleverprogrammer.com/author/amankharwal/.) Online Payments Fraud Detection with Machine Learning.
