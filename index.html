@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Payments Fraud Detection</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+
+<body>
+    <div class="input">
+        <h1>Online Payments Fraud Detection</h1>
+        <form method="post" action="/predict">
+
+                <label> Select Type </label>
+                <select name="type" type="string" id="stock" >
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option value="CASH_OUT"> CASH_OUT
+                    </option>
+                    <option value="PAYMENT"> PAYMENT
+                    </option>
+                    <option value="CASH_IN"> CASH_IN
+                    </option>
+                    <option value="TRANSFER"> TRANSFER
+                    </option>
+                    <option value="DEBIT"> DEBIT
+                    </option>
+
+                </select>
+ 
+
+            <label for="stock">Amount:</label>
+            <input type="integer" id="stock" name="amount" placeholder="Amount">
+
+            <label for="stock">OldbalanceOrg:</label>
+            <input type="integer" id="stock" name="oldbalanceOrg" placeholder="OldbalanceOrg">
+
+            <label for="stock">NewbalanceOrig:</label>
+            <input type="integer" id="stock" name="newbalanceOrig" placeholder="NewbalanceOrig">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <p> Fraud Detection: {{  prediction }}</p>
+</body>
+
+
+</html>
