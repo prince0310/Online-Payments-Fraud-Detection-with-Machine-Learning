@@ -111,3 +111,4 @@ features = np.array([[4, 9000.60, 9000.60, 0.0]])
 print(model.predict(features))
 
 ```
+Refrence : The code in this project was inspired by the [article](https://thecleverprogrammer.com/author/amankharwal/.) Online Payments Fraud Detection with Machine Learning.
